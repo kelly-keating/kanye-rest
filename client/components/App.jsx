@@ -8,7 +8,7 @@ export default class App extends React.Component {
 
   render () {
     return (
-      <div>
+      <div className='container'>
         <div id='title'>Title</div>
         <form id='searchBar'>
           <input type="text" id='search' placeholder="Search" />
