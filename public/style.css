@@ -1,12 +1,19 @@
-h1, h2, h3 {
-  font-family: 'Montserrat Subrayada', sans-serif;
+#title {
+
+}
+
+#searchBar {
   color: white;
 }
 
-p {
-  color: white;
-}
-
-body {
+#search {
   background-color: black;
+}
+
+#btn {
+
+}
+
+#textbox {
+  
 }
