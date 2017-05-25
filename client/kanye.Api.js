@@ -1,6 +1,9 @@
 var request = require('superagent')
 
-export default function getKanye (callback) {
+
+
+
+getKanye (callback) => {
   request
     .get('/api/kanye')
     .end((err, res) => {
@@ -10,4 +13,9 @@ export default function getKanye (callback) {
         callback(null, res.body)
       }
     })
+}
+
+module.exports = {
+  getKanye,
+  
 }

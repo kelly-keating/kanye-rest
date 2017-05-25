@@ -11,7 +11,6 @@ var router = express.Router()
      res.send(result.body)
 
    })
-
  })
 
 module.exports = router
