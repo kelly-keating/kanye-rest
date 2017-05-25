@@ -1,13 +1,34 @@
-h1, h2, h3 {
-  font-family: 'Montserrat Subrayada', sans-serif;
-  color: white;
-}
-
-p {
-  color: white;
-}
-
 body {
-  background-color: black;
-  color: white;
+  background: url('http://saintheron.com/wp-content/uploads/2016/04/Kanye-West.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+.container {
+  align-content: center;
+}
+
+
+#title {
+  margin: auto;
+  text-align: center;
+  font-size: 10em;
+}
+
+#searchBar {
+  margin: auto;
+  width: 400px;
+}
+
+#search {
+  width: 300px;
+}
+
+#btn {
+
+}
+
+#textbox {
+  font-size: 1.5em;
+  text-align: center;
 }

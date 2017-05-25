@@ -21864,6 +21864,7 @@
 	  function App(props) {
 	    _classCallCheck(this, App);
 	
+
 	    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
 	
 	    _this.state = {};
@@ -21882,15 +21883,33 @@
 	
 	
 	  }, {
+
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        null,
+
+	        { className: 'container' },
 	        _react2.default.createElement(
-	          'h1',
+	          'div',
 	          { id: 'title' },
-	          'Kanye-Rest'
+	          'KanyeRest'
+	        ),
+	        _react2.default.createElement(
+	          'form',
+	          { id: 'searchBar' },
+	          _react2.default.createElement('input', { type: 'text', id: 'search', placeholder: 'Search' }),
+	          _react2.default.createElement(
+	            'button',
+	            { id: 'btn' },
+	            'Button'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { id: 'textbox' },
+	          'Textbox'
+
 	        )
 	      );
 	    }
@@ -21899,6 +21918,8 @@
 	  return App;
 	}(_react2.default.Component);
 	
+
+
 	//  <form id = 'searchBar' onSubmit={this.handleSubmit.bind(this)}>
 	//    <input type = 'text' id = 'search'>
 	//
@@ -21908,7 +21929,7 @@
 	//
 	//  </form>
 	
-	
+
 	exports.default = App;
 
 /***/ }),
