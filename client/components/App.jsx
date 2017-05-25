@@ -9,7 +9,7 @@ export default class App extends React.Component {
   render () {
     return (
       <div className='container'>
-        <div id='title'>Title</div>
+        <div id='title'>KanyeRest</div>
         <form id='searchBar'>
           <input type="text" id='search' placeholder="Search" />
           <button id='btn'>Button</button>

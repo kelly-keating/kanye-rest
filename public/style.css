@@ -11,14 +11,16 @@ body {
 #title {
   margin: auto;
   text-align: center;
+  font-size: 10em;
 }
 
 #searchBar {
-  margin: 0 auto;
+  margin: auto;
+  width: 400px;
 }
 
 #search {
-
+  width: 300px;
 }
 
 #btn {
@@ -26,7 +28,6 @@ body {
 }
 
 #textbox {
-  opacity: 0.7;
   font-size: 1.5em;
   text-align: center;
 }

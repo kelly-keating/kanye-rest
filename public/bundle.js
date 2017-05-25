@@ -21872,7 +21872,7 @@
 	        _react2.default.createElement(
 	          'div',
 	          { id: 'title' },
-	          'Title'
+	          'KanyeRest'
 	        ),
 	        _react2.default.createElement(
 	          'form',
