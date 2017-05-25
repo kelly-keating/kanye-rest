@@ -21846,6 +21846,10 @@
 	
 	var _reactRouterDom = __webpack_require__(183);
 	
+	var _kanye = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../kanye.Api\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	
+	var _kanye2 = _interopRequireDefault(_kanye);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -21860,14 +21864,31 @@
 	  function App(props) {
 	    _classCallCheck(this, App);
 	
-	    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
+
+	    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
+	
+	    _this.state = {};
+	    return _this;
 	  }
 	
 	  _createClass(App, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      (0, _kanye2.default)(console.log);
+	    }
+	
+	    // handleSubmit(e) {
+	    //   ///api
+	    // }
+	
+	
+	  }, {
+
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
+
 	        { className: 'container' },
 	        _react2.default.createElement(
 	          'div',
@@ -21888,6 +21909,7 @@
 	          'div',
 	          { id: 'textbox' },
 	          'Textbox'
+
 	        )
 	      );
 	    }
@@ -21896,6 +21918,18 @@
 	  return App;
 	}(_react2.default.Component);
 	
+
+
+	//  <form id = 'searchBar' onSubmit={this.handleSubmit.bind(this)}>
+	//    <input type = 'text' id = 'search'>
+	//
+	//    </input>
+	//
+	//
+	//
+	//  </form>
+	
+
 	exports.default = App;
 
 /***/ }),

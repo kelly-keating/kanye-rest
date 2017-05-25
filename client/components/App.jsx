@@ -1,21 +1,49 @@
 import React from 'react'
 import {HashRouter as Router, Route} from 'react-router-dom'
 
+
+import KA from '../kanye.Api'
+
+
 export default class App extends React.Component {
-  constructor (props) {
-    super (props)
+  constructor(props) {
+    super(props)
+    this.state = {
+
+    }
   }
 
-  render () {
-    return (
-      <div className='container'>
-        <div id='title'>KanyeRest</div>
-        <form id='searchBar'>
-          <input type="text" id='search' placeholder="Search" />
-          <button id='btn'>Button</button>
-        </form>
-        <div id='textbox'>Textbox</div>
-      </div>
-    )
-  }
+componentDidMount () {
+  KA(console.log)
 }
+
+
+
+
+  // handleSubmit(e) {
+  //   ///api
+  // }
+
+
+   render(){
+     return(
+       <div>
+         <h1 id = 'title' >Kanye-Rest</h1>
+       </div>
+     )
+   }
+
+
+}
+
+
+
+//  <form id = 'searchBar' onSubmit={this.handleSubmit.bind(this)}>
+//    <input type = 'text' id = 'search'>
+//
+//    </input>
+//
+//
+//
+//  </form>
+
