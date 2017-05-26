@@ -2,7 +2,7 @@ import React from 'react'
 import {HashRouter as Router, Route} from 'react-router-dom'
 
 
-import KA from '../kanye.Api'
+import * as api from '../kanye.Api'
 
 
 export default class App extends React.Component {
@@ -14,7 +14,7 @@ export default class App extends React.Component {
   }
 
 componentDidMount () {
-  KA(console.log)
+  api.getKanye(console.log)
 }
 
 
@@ -27,8 +27,13 @@ componentDidMount () {
 
    render(){
      return(
-       <div>
-         <h1 id = 'title' >Kanye-Rest</h1>
+       <div id='container'>
+         <div id='title' >Kanye-Rest</div>
+           <form id='searchBar'>
+             <input type="text" id='search' placeholder="Search" />
+             <button id='btn'>Button</button>
+           </form>
+           <div id='textbox'>Textbox</div>
        </div>
      )
    }
@@ -46,4 +51,3 @@ componentDidMount () {
 //
 //
 //  </form>
-

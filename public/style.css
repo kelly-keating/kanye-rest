@@ -1,34 +1,46 @@
 body {
   background: url('http://saintheron.com/wp-content/uploads/2016/04/Kanye-West.jpg') no-repeat center center fixed;
   background-size: cover;
-  height: 100%;
+  height: 100vh;
+  margin: 0vh;
 }
 
 .container {
   align-content: center;
+  height: 100vh;
 }
-
 
 #title {
   margin: auto;
   text-align: center;
-  font-size: 10em;
+  font-size: 8em;
+  background-color: rgba(255, 255, 255, .8);
+  width: 6em;
+  border-radius: 60px;
 }
 
 #searchBar {
-  margin: auto;
-  width: 400px;
+  position: absolute;
+  bottom: 20vh;
+  width: 80vh;
+  align-content: center;
+
 }
 
 #search {
-  width: 300px;
+  width: 60vh;
+  height: 10vh;
+  border-width: 0px;
 }
 
 #btn {
-
+  width: 20vh;
+  height: 10vh;
+  border-width: 0px;
 }
 
 #textbox {
   font-size: 1.5em;
   text-align: center;
+  width: 50vh;
 }

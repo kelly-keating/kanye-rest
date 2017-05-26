@@ -3,7 +3,7 @@ var request = require('superagent')
 
 
 
-getKanye (callback) => {
+const getKanye = (callback) => {
   request
     .get('/api/kanye')
     .end((err, res) => {
@@ -16,6 +16,5 @@ getKanye (callback) => {
 }
 
 module.exports = {
-  getKanye,
-  
+  getKanye
 }
