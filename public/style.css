@@ -25,7 +25,8 @@ body {
 }
 
 #btn {
-
+  background: url('http://saintheron.com/wp-content/uploads/2016/04/Kanye-West.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 #textbox {

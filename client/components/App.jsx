@@ -53,7 +53,8 @@ render() {
 
         <form id='searchBar'>
           <input type="text" id='search' placeholder="Search" onChange={this.handleChange}/>
-          <button id='btn' onClick={this.handleSubmit}>Button</button>
+          <button id='btn' onClick={this.handleSubmit}>.
+          </button>
         </form>
         <ShowKanyeCount text={this.state.value} count={this.state.count}/>
       </div>
@@ -68,7 +69,7 @@ class ShowKanyeCount extends React.Component {
   render() {
     return (
       <div id="textbox"><p>
-        {this.props.text} was used {this.props.count} times by Kanye.
+        Kanye used the word {this.props.text} <br></br> {this.props.count} times.
       </p>
       </div>
     )

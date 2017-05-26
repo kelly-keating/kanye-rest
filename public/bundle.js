@@ -21933,7 +21933,7 @@
 	            _react2.default.createElement(
 	              'button',
 	              { id: 'btn', onClick: this.handleSubmit },
-	              'Button'
+	              '.'
 	            )
 	          ),
 	          _react2.default.createElement(ShowKanyeCount, { text: this.state.value, count: this.state.count })
@@ -21965,10 +21965,13 @@
 	        _react2.default.createElement(
 	          'p',
 	          null,
+	          'Kanye used the word ',
 	          this.props.text,
-	          ' was used ',
+	          ' ',
+	          _react2.default.createElement('br', null),
+	          ' ',
 	          this.props.count,
-	          ' times by Kanye.'
+	          ' times.'
 	        )
 	      );
 	    }
@@ -25466,18 +25469,6 @@
 	'use strict';
 	
 	var request = __webpack_require__(224);
-	
-	// const grabWord = (word, callback) => {
-	//   request
-	//     .get('/api/kanye')
-	//     .query({word})
-	//     .end((err, res) => {
-	//       if (!err) callback(null, res.body)
-	//       else callback()
-	//     })
-	// }
-	// grabWord(console.log)
-	
 	
 	var getKanye = function getKanye(callback) {
 	  request.get('/api/kanye').end(function (err, res) {
