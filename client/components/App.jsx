@@ -34,7 +34,7 @@ componentDidMount () {
              <input type="text" id='search' placeholder="Search" />
              <button id='btn'>go</button>
            </form>
-           <div id='textbox'>Textbox</div>
+           <div id='textbox'>Kanye used the word bitch <br />345 times.</div>
          </div>
        </div>
      )
