@@ -11,35 +11,52 @@ body {
 }
 
 #title {
-
   text-align: center;
-  font-size: 8em;
+  font-size: 10vh;
   background-color: rgba(255, 255, 255, 0.1);
   font-family: 'Permanent Marker', cursive;
 }
 
-#searchBar {
+#content {
   position: absolute;
-  bottom: 20vh;
-  width: 80vh;
-  align-content: center;
+  bottom: 0vh;
+  left: 22.5vw;
+  height: 40vh;
+  width: 55vw;
+  font-size: 1.5em;
+}
 
+#searchBar {
+  width: 55vw;
+  height: 10vh;
+  align-content: center;
+  margin-bottom: 5vh;
+  border: white solid 5px;
 }
 
 #search {
-  width: 60vh;
+  font-size: 26px;
+  width: 44vw;
   height: 10vh;
   border-width: 0px;
+  padding-left: 1vw;
 }
 
 #btn {
-  width: 20vh;
+  font-size: 26px;
+  width: 10vw;
   height: 10vh;
   border-width: 0px;
+  background: url('http://cdn.shopify.com/s/files/1/1037/6450/t/2/assets/favicon.png?5921001109522995872') no-repeat;
+  background-size: Auto 160px;
 }
 
 #textbox {
-  font-size: 1.5em;
+  padding-top: 2vh;
+  height: 15vh;
   text-align: center;
-  width: 50vh;
+  width: 45vw;
+  margin: auto;
+  font-family: 'Permanent Marker', cursive;
+  color: white;
 }

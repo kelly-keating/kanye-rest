@@ -32,7 +32,7 @@ componentDidMount () {
          <div id='content'>
            <form id='searchBar'>
              <input type="text" id='search' placeholder="Search" />
-             <button id='btn'>Button</button>
+             <button id='btn'>go</button>
            </form>
            <div id='textbox'>Textbox</div>
          </div>
