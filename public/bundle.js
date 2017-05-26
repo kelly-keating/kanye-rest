@@ -21979,15 +21979,6 @@
 	
 	  return ShowKanyeCount;
 	}(_react2.default.Component);
-	
-	//  <form id = 'searchBar' onSubmit={this.handleSubmit.bind(this)}>
-	//    <input type = 'text' id = 'search'>
-	//
-	//    </input>
-	//
-	//
-	//
-	//  </form>
 
 /***/ }),
 /* 183 */

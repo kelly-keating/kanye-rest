@@ -75,12 +75,3 @@ class ShowKanyeCount extends React.Component {
     )
   }
 }
-
-//  <form id = 'searchBar' onSubmit={this.handleSubmit.bind(this)}>
-//    <input type = 'text' id = 'search'>
-//
-//    </input>
-//
-//
-//
-//  </form>
