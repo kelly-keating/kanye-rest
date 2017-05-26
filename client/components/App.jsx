@@ -8,8 +8,9 @@ export default class App extends React.Component {
     super(props)
     this.state = {
       value: '',
-      count: '',
-      words: {}
+      count: 0,
+      words: {},
+      sentence: "______",
     }
 
     this.handleChange = this.handleChange.bind(this);
@@ -24,8 +25,8 @@ export default class App extends React.Component {
   handleSubmit(evt) {
     console.log(this.state.value+" at handleSubmit");
     evt.preventDefault()
-    this.printWords(this.state.value)
-    this.setState({value: this.state.value})
+    this.countWords(this.state.value)
+    this.setState({sentence: this.state.value})
   }
 
   componentDidMount() {
@@ -36,7 +37,7 @@ export default class App extends React.Component {
     })
   }
 
-  printWords(search) {
+  countWords(search) {
     var result = this.state.words[search]
     this.setState ({
       count: result
@@ -56,7 +57,7 @@ render() {
           <button id='btn' onClick={this.handleSubmit}>.
           </button>
         </form>
-        <ShowKanyeCount text={this.state.value} count={this.state.count}/>
+        <ShowKanyeCount text={this.state.sentence} count={this.state.count}/>
       </div>
     </div>
 

@@ -21870,8 +21870,9 @@
 	
 	    _this.state = {
 	      value: '',
-	      count: '',
-	      words: {}
+	      count: 0,
+	      words: {},
+	      sentence: "______"
 	    };
 	
 	    _this.handleChange = _this.handleChange.bind(_this);
@@ -21890,8 +21891,8 @@
 	    value: function handleSubmit(evt) {
 	      console.log(this.state.value + " at handleSubmit");
 	      evt.preventDefault();
-	      this.printWords(this.state.value);
-	      this.setState({ value: this.state.value });
+	      this.countWords(this.state.value);
+	      this.setState({ sentence: this.state.value });
 	    }
 	  }, {
 	    key: 'componentDidMount',
@@ -21905,8 +21906,8 @@
 	      });
 	    }
 	  }, {
-	    key: 'printWords',
-	    value: function printWords(search) {
+	    key: 'countWords',
+	    value: function countWords(search) {
 	      var result = this.state.words[search];
 	      this.setState({
 	        count: result
@@ -21936,7 +21937,7 @@
 	              '.'
 	            )
 	          ),
-	          _react2.default.createElement(ShowKanyeCount, { text: this.state.value, count: this.state.count })
+	          _react2.default.createElement(ShowKanyeCount, { text: this.state.sentence, count: this.state.count })
 	        )
 	      );
 	    }
