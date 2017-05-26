@@ -21904,7 +21904,7 @@
 	            _react2.default.createElement(
 	              'button',
 	              { id: 'btn' },
-	              'go'
+	              '.'
 	            )
 	          ),
 	          _react2.default.createElement(
