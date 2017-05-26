@@ -21910,7 +21910,7 @@
 	    value: function countWords(search) {
 	      var result = this.state.words[search];
 	      this.setState({
-	        count: result
+	        count: result | 0
 	      });
 	    }
 	  }, {

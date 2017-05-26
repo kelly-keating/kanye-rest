@@ -29,6 +29,7 @@ export default class App extends React.Component {
     this.setState({sentence: this.state.value})
   }
 
+
   componentDidMount() {
     api.getKanye((err, words) => {
       this.setState({
@@ -40,7 +41,7 @@ export default class App extends React.Component {
   countWords(search) {
     var result = this.state.words[search]
     this.setState ({
-      count: result
+      count: result | 0
     })
   }
 
