@@ -21895,19 +21895,23 @@
 	          'Kanye-Rest'
 	        ),
 	        _react2.default.createElement(
-	          'form',
-	          { id: 'searchBar' },
-	          _react2.default.createElement('input', { type: 'text', id: 'search', placeholder: 'Search' }),
-	          _react2.default.createElement(
-	            'button',
-	            { id: 'btn' },
-	            'Button'
-	          )
-	        ),
-	        _react2.default.createElement(
 	          'div',
-	          { id: 'textbox' },
-	          'Textbox'
+	          { id: 'content' },
+	          _react2.default.createElement(
+	            'form',
+	            { id: 'searchBar' },
+	            _react2.default.createElement('input', { type: 'text', id: 'search', placeholder: 'Search' }),
+	            _react2.default.createElement(
+	              'button',
+	              { id: 'btn' },
+	              'Button'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { id: 'textbox' },
+	            'Textbox'
+	          )
 	        )
 	      );
 	    }
