@@ -25,7 +25,7 @@ export default class App extends React.Component {
   handleSubmit(evt) {
     console.log(this.state.value+" at handleSubmit");
     evt.preventDefault()
-    this.countWords(this.state.value)
+    this.countWords(this.state.value.toLowerCase())
     this.setState({sentence: this.state.value})
   }
 
