@@ -14,5 +14,4 @@ const getKanye = (callback) => {
 
 module.exports = {
   getKanye
-
 }
