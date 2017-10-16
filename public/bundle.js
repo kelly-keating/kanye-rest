@@ -25636,7 +25636,7 @@
 	var request = __webpack_require__(226);
 	
 	var getKanye = function getKanye(callback) {
-	  request.get('/api/kanye').end(function (err, res) {
+	  request.get('/kanye-rest/api/kanye').end(function (err, res) {
 	    if (err) {
 	      callback(err);
 	    } else {
