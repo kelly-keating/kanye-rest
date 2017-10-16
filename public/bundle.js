@@ -25647,7 +25647,6 @@
 	
 	module.exports = {
 	  getKanye: getKanye
-	
 	};
 
 /***/ }),
